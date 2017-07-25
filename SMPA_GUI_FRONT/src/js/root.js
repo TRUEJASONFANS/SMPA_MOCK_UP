@@ -12,6 +12,11 @@ export default class Root extends React.Component {
 				<Router history={hashHistory}>
 					<Route path="/" component={App} >
 						<IndexRoute component={SMPAIndex} />
+						<Route path="/scannerSetup" component={ScannerSetup}/>
+						<Route path="/processSetup" component={ProcessStep}/>
+						<Route path="/proximityAnalysis" component={ProximityAnalysis}/>
+						<Route path="/resultReview" component={ResultReview}/>
+						<Route path="/log" component={SMPALOG}/>
 					</Route>
 				</Router>
 			</div>
